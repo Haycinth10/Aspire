@@ -1,0 +1,137 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1E2328; /* Dark background */
+    color: #FFFFFF; /* Light text for contrast */
+}
+
+/* Header */
+header {
+    background-color: #F5B301; /* Gold accent */
+    color: #1E2328; /* Dark background for text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #2A2E34; /* Dark background for the hero */
+    color: #FFFFFF; /* Light text */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Gallery */
+.gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #3B3F46; /* Darker background for gallery */
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    position: relative;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+    transform: scale(1.1);
+}
+
+.description {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: #FFFFFF; /* Light text */
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-item:hover .description {
+    opacity: 1;
+}
+
+/* Call to Action */
+.call-to-action {
+    background-color: #2A2E34; /* Dark background */
+    color: #FFFFFF; /* Light text */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.call-to-action h2 {
+    font-size: 2.5em;
+}
+
+.call-to-action p {
+    font-size: 1.5em;
+    padding-bottom: 15px;
+}
+
+.donation-btn {
+    padding: 15px 30px;
+    background-color: #F5B301; /* Gold Accent Color */
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.donation-btn:hover {
+    background-color: #FED053; /* Hover Gold Color */
+}
+
+/* Footer */
+footer {
+    background-color: #333333; /* Footer background color */
+    color: #FFFFFF; /* Light text */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
